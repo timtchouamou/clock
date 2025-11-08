@@ -1,0 +1,125 @@
+body {
+  background: linear-gradient(135deg, #1b2735, #090a0f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+#clock {
+    background-color: rgba(227, 219, 219, 0.936);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: relative;
+
+      /* 👇 Add these lines */
+  overflow: hidden; /* ensures image stays inside circle */
+  background-image: url("/assets/familly.jpeg"); /* path to your image */
+  background-size: cover; /* makes the image fill the clock */
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.number {
+    position: absolute;
+    top: 0;
+    /* background-color: red; */
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.handle {
+    position: absolute;
+    background-color: black;
+    width: 8px;
+    height: 200px;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+
+}
+
+.handle__milliseconds{
+     background-color: red;
+    width: 1px;
+    height: 220px;
+    transform: translateX(-50%) rotate(90deg); 
+}
+
+.handle__second {
+    background-color: red;
+    width: 1px;
+    height: 220px;
+    transform: translateX(-50%) rotate(90deg);
+    
+ 
+}
+.handle__minute {
+    width: 4px;
+    height: 200px;
+    
+    
+}
+.handle__hour {
+    width: 8px;
+    height: 100px;
+    transform: translateX(-50%) rotate(90deg);
+    
+ 
+}
+
+.number:nth-of-type(1) {
+    transform: rotate(30deg);
+   font-size: 35px;
+}
+.number:nth-of-type(2) {
+    transform: rotate(60deg);
+    font-size: 35px;
+}
+.number:nth-of-type(3) {
+    transform: rotate(90deg);
+    font-size: 35px;
+}
+.number:nth-of-type(4) {
+    transform: rotate(120deg);
+    font-size: 35px;
+}
+.number:nth-of-type(5) {
+    transform: rotate(150deg);
+    font-size: 35px;
+}
+.number:nth-of-type(6) {
+    transform: rotate(180deg);
+    font-size: 35px;
+}
+.number:nth-of-type(7) {
+    transform: rotate(210deg);
+    font-size: 35px;
+}
+.number:nth-of-type(8) {
+    transform: rotate(240deg);
+    font-size: 35px;
+}
+.number:nth-of-type(9) {
+    transform: rotate(270deg);
+    font-size: 35px;
+}
+.number:nth-of-type(10) {
+    transform: rotate(300deg);
+    font-size: 35px;
+}
+.number:nth-of-type(11) {
+    transform: rotate(330deg);
+    font-size: 35px;
+}
+.number:nth-of-type(12) {
+    transform: rotate(360deg);
+    font-size: 35px;
+}
