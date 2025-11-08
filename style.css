@@ -69,7 +69,7 @@ body {
 }
 .handle__hour {
     width: 8px;
-    height: 100px;
+    height: 150px;
     transform: translateX(-50%) rotate(90deg);
     
  
@@ -123,3 +123,45 @@ body {
     transform: rotate(360deg);
     font-size: 35px;
 }
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .number {
+    font-size: 4vmin;
+  }
+}
+
+@media (max-width: 480px) {
+  #clock {
+    width: 90vmin;
+    height: 90vmin;
+  }
+
+  .number {
+    font-size: 5vmin;
+  }
+.handle__second {
+    background-color: red;
+    width: 1px;
+    height: 170px;
+    transform: translateX(-50%) rotate(90deg);
+    
+ 
+}
+.handle__minute {
+    width: 4px;
+    height: 160px;
+    
+    
+}
+.handle__hour {
+    width: 8px;
+    height: 110px;
+    transform: translateX(-50%) rotate(90deg);
+    
+ 
+}
+
+
+} 
